@@ -1,5 +1,7 @@
 #version 430
 
+// based on the algorithm described in http://research.microsoft.com/pubs/70576/tr-2008-62.pdf
+
 #define SIZE 512
 
 #define PI 3.14159265358979323844
