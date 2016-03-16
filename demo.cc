@@ -11,7 +11,7 @@ get_cur_ms()
 {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
-    return static_cast<uint64_t>(ts.tv_sec) + static_cast<uint64_t>(ts.tv_nsec/1000000);
+    return ts.tv_sec*1000ull + ts.tv_nsec/1000000;
 }
 
 }
